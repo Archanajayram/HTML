@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>form inputs</h1>
+    <form action="">
+        <label for="">text input</label>
+        <input type="text" name="" id=""> <!--accepts all characters-->
+        <br><br>
+
+        <label for="">number input</label>
+        <input type="number" name="" id=""> <!--accepts only numbers-->
+        <br><br>
+
+        <label for="">email input</label>
+        <input type="email" name="" id="" placeholder="sample@gmail.com"> <!--accepts only email id-->
+        <br><br>
+
+        <label for="">password</label> <!-- crt+shift+? crtl+shift+d for duplicate ctrl+d entire line as comment-->
+        <input type="password" name="" id=""> <!--same as text type ,the input is hidden-->
+        <br><br>
+
+        <label for="">date input</label>
+        <input type="date" name="" id="">
+        <br><br>
+
+        <label for="">date time</label>
+        <input type="datetime" name="" id="" placeholder="mm/dd/yy hr:min:sec:ms">
+        <br><br>
+
+        <label for="">date time local</label>
+        <input type="datetime-local" name="" id="">
+        <br><br>
+
+        <label for="">week</label>
+        <input type="week" name="" id="">
+        <br><br>
+
+        <label for="">time</label>
+        <input type="time" name="" id="">
+        <br><br>
+
+        <label for="">month</label>
+        <input type="month" name="" id="">
+        <br><br>
+
+        <label for="">url</label>
+        <input type="url" name="" id="" placeholder="https://www.google.com">
+        <br><br>
+
+        <label for="">search</label>
+        <input type="search" name="" id="" placeholder="enter search data"> <!-- string query  -->
+        <br><br>
+
+        <label for="">color</label>
+        <input type="color" name="" id=""> <!-- rgb(225,225,225) -->
+        <br><br>
+
+        <label for="">range</label>
+        <input type="range" name="" id="" style="width: 50%;" min="0" max="100" value="0" step="5" onchange="getvalue()">
+    </form>
+    <script>
+        var x=document.getElementById('weight');
+        var out=document.getElementById('output');
+
+        function getvalue(){
+            out.innerText=`${x.value} kg`;
+
+        }
+        getvalue()
+    </script>
+</body>
+</html>
